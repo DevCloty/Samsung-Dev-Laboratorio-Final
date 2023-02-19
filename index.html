@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio Final: Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Crear una Cuenta</h2>
+        </div>
+        <form class="form" id="form">
+
+            <!--Campo Nombre-->
+            <div class="form-control">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Claudia López"/>
+                <img class="check-circle" src="Images/success-icon.svg"/>
+                <img class="exclamation-circle" src="Images/error-icon.svg"/>
+                <small>Nombre inválido</small>
+            </div>
+
+            <!--Campo Email-->
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="claudia@email.com"/>
+                <img class="check-circle" src="Images/success-icon.svg"/>
+                <img class="exclamation-circle" src="Images/error-icon.svg"/>
+                <small>Email inválido</small>
+            </div>
+
+            <!--Campo Clave-->
+            <div class="form-control">
+                <label for="password">Clave</label>
+                <input type="password" id="password"/>
+                <img class="check-circle" src="Images/success-icon.svg"/>
+                <img class="exclamation-circle" src="Images/error-icon.svg"/>
+                <small>Debe tener entre 8 y 14 caracteres</small>
+            </div>
+
+            <!--Campo Confirmación Clave-->
+            <div class="form-control">
+                <label for="password2">Confirmar clave</label>
+                <input type="password" id="password2"/>
+                <img class="check-circle" src="Images/success-icon.svg"/>
+                <img class="exclamation-circle" src="Images/error-icon.svg"/>
+                <small>Las claves no coinciden</small>
+            </div>
+
+            <!--Submit-->
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

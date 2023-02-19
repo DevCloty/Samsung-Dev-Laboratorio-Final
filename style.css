@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+/* Estilo Formulario */
+body {
+	font-family: 'Open Sans', sans-serif;
+    color: #ACBAE1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 0;
+    background-color: #242933;
+}
+
+.container {
+	border-radius: 5px;
+    border: 2px solid #3C4258;
+	overflow: hidden;
+	width: 400px;
+	max-width: 100%;
+    background-color: #2F3644;
+}
+
+.header {
+	background-color: #2F3644;
+	padding: 20px 40px;
+}
+
+.header h2 {
+	margin: 0;
+    padding-top: 20px;
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: #A5A8B2;
+}
+
+
+/* Estilos de Validación*/
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control img {
+	visibility: hidden;
+	position: absolute;
+	right: 12px;
+    top: 40px;
+    z-index: 100;
+}
+
+.form-control.success img.check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error img.exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+/* Botón Submit */
+.form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+	border: 2px solid #05050A;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+    text-transform: uppercase ;
+    color: #fff;
+    background-color: #6C63FF;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.form button:hover {
+    background-color: #6b63ff8e;
+}
+
+.form button:focus {
+    border: 2px outset;
+}
